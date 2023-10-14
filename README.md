@@ -2,9 +2,10 @@
 Computes energy and force for gas-phase Hydroxide Hydrate (H${_3}$O$_2^-$)
 ==========================================================================
 --------------------
-Disclaimer : This program is a fortran adaptation of the force and energy computation part of the 
+Disclaimer: This program is a Fortran adaptation of the force and energy computation part of the 
 Symmetric Gradient Domain Machine Learning (sGDML) model code {https://github.com/stefanch/sGDML}. 
-This code has been (successfully) tested against the original implementation which is written in *python*. 
+This code has been (successfully) tested against the original implementation, which is written in *python*. 
+
 Usage in an MD code
 -------------------
 To utilize the PES in an MD code, follow these steps:
@@ -15,7 +16,7 @@ To utilize the PES in an MD code, follow these steps:
 
 Cartesian coordinate format
 ---------------------------
-The input geometries should be in the follwing format. First two atoms must be oxygen atoms followed by the three hydrogen atom. 
+The input geometries should be in the following format: the first two atoms must be oxygen atoms, followed by the three hydrogen atoms. 
 
 PATH to parameter files
 -----------------------
@@ -47,11 +48,11 @@ Run the compiled executable *getfe.exe*. The code will process the geometries, c
 Input File Format
 -----------------
 The input file contains the Cartesian coordinates of each geometry written in a single line. 
-A compressed file, *inputcoord.dat.gz*, with 100 test geometries is available to use. The user 
-must uncompress this file using *gunzip inputcoord.dat.gz* command before using. 
+A compressed file, *inputcoord.dat.gz*, with 100 test geometries, is available to use. The user 
+must decompress this file using the *gunzip inputcoord.dat.gz* command. 
 Output Format
 -------------
-The output energies will be in units of Hartee, and the forces will be in Hartee/Bohr,. Each line in the output file will follow this format:
+The output energies will be in units of Hartee, and the forces will be in Hartee/Bohr. Each line in the output file will follow this format:
 > Energy, $F_x$, $F_y$, $F_z$ of atom 1, $F_x$, $F_y$, $F_z$ of atom 2 ....
 
 Feel free to reach out if you have any questions or need further assistance.
