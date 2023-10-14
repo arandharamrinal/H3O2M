@@ -1,6 +1,7 @@
-# H${_3}$O$_2^-$
+# H_3O_2^-
 Computes energy and force for gas-phase Hydroxide Hydrate (H${_3}$O$_2^-$)
 ==========================================================================
+--------------------
 Disclaimer : This program is a fortran adaptation of the force and energy computation part of the 
 Symmetric Gradient Domain Machine Learning (sGDML) model code {https://github.com/stefanch/sGDML}. 
 This code has been (successfully) tested against the original implementation which is written in *python*. 
