@@ -1,4 +1,4 @@
-# H_3O_2^-^$
+# H<sub>3</sub>O<sub>2</sub><sup>-</sup>$
 Computes energy and force for gas-phase Hydroxide Hydrate (H${_3}$O$_2^-$)
 ==========================================================================
 --------------------
