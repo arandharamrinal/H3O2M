@@ -1,5 +1,5 @@
 # H<sub>3</sub>O<sub>2</sub><sup>-</sup>
-Computes energy and force for gas-phase Hydroxide Hydrate (H${_3}$O$_2^-$)
+Computes energy and force for gas-phase Hydroxide Hydrate ( H<sub>3</sub>O<sub>2</sub><sup>-</sup>)
 ==========================================================================
 --------------------
 Disclaimer: This program is a Fortran adaptation of the force and energy computation part of the 
@@ -12,7 +12,7 @@ To utilize the PES in an MD code, follow these steps:
   1. Compile *sGDML.f90* routine.
   2.  Next, initialize the module by invoking the *loadSgdmlModel()* subroutine.
   3. Integrate the modules into the subroutine responsible for calculating Forces and Energies. To achieve this, include the line *use sgdmlparams* before specifying the variables.
-  4. To compute the force and energy, use the *getForce(X, F, V)* subroutine. Where X represents the input Cartesian geometry in Angstrom (a 1x3N array), F denotes the force array with a dimension of 1x3N, and V (a scalar) stands for the potential. N is the total number of atoms (N=5 for H${_3}$O$_2^-$).
+  4. To compute the force and energy, use the *getForce(X, F, V)* subroutine. Where X represents the input Cartesian geometry in Angstrom (a 1x3N array), F denotes the force array with a dimension of 1x3N, and V (a scalar) stands for the potential. N is the total number of atoms (N=5 for  H<sub>3</sub>O<sub>2</sub><sup>-</sup>).
 
 Cartesian coordinate format
 ---------------------------
