@@ -50,6 +50,7 @@ Input File Format
 The input file contains the Cartesian coordinates of each geometry written in a single line. 
 A compressed file, *inputcoord.dat.gz*, with 100 test geometries, is available to use. The user 
 must decompress this file using the *gunzip inputcoord.dat.gz* command. 
+
 Output Format
 -------------
 The output energies will be in units of Hartee, and the forces will be in Hartee/Bohr. Each line in the output file will follow this format:
