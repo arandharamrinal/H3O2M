@@ -15,10 +15,10 @@ integer::i,j
 character(len=50)::modelfile
 ioparam_sgdml =5000 
 iomodel_sgdml = 5001
-open(unit=io_sgdml,file='sGDMLmodel/sGDMLmode.dat',status='old',iostat=iostatparam_sgdml)
-if (iostatparam_sgdml.eq.0) then
-	read(io_sgdml,*)modelfile
-	open(unit=iomodel_sgdml,file=trim(adjustl(modelfile)),status='old',iostat=iostatmodel_sgdml)
+!open(unit=io_sgdml,file='sgdml.param',status='old',iostat=iostatparam_sgdml)
+!if (iostatparam_sgdml.eq.0) then
+!	read(io_sgdml,*)modelfile
+	open(unit=iomodel_sgdml,file='sGDMLmodel/sGDMLmodel.dat',status='old',iostat=iostatmodel_sgdml)
 	if (iostatmodel_sgdml.eq.0) then
 		!Read Number of atoms(Natoms), Number of permutations(N_perm), And number of training set (N_train)
 		read(iomodel_sgdml,*)
@@ -66,10 +66,10 @@ if (iostatparam_sgdml.eq.0) then
 		write(*,*)"Error Reading SGDML model file!! "
 	endif
 	
-else
-	write(*,*)"Error Reading sgdml.param file!! "
-	stop
-endif
+!else
+!	write(*,*)"Error Reading sgdml.param file!! "
+!	stop
+!endif
 !Define a few parameters 
 sigma_sgdml_inv =  1.d0 / sigma_sgdml
 mat52_base_fact = 5.d0 / (3.d0 * sigma_sgdml**3)
