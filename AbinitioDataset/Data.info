@@ -1,0 +1,13 @@
+A dataset containing xyz coordinate, energies, forces, and dipole moments of hydroxide hydrate. All data are obtained at the CCSD(T)/AVTZ level of theory using CFOUR2.1 software.
+
+ffextFiles.tar:  Contains 15024  separate files for each geometry with the '.ffext' extension.  
+
+Units are :
+
+Energy = Hartree (relative to the global minimum)
+
+Geometry = Bohr
+
+Forces = Hartree/Bohr
+
+trainfiles.txt, validfiles.txt, and testfiles.txt  files contain '.ffext' filenames of the training, validation, and test data, respectively, as used in the paper link.  
