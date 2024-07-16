@@ -60,8 +60,8 @@ Ab-initio Data
 -------------
 A dataset containing xyz coordinates, energies, forces, and dipole moments of hydroxide hydrate is available in the AbinitioDataset directory. All data are obtained at the CCSD(T)/AVTZ level of theory using CFOUR2.1 software.
 
-h3o2m_traindata.tar, h3o2m_validation_data.tar, and h3o2m_testdata.tar contains the training, validation, and test data, respectively, see J. Phys. Chem. A 128, 1600 (2024) [DOI: 10.1021/acs.jpca.3c08027](https://pubs.acs.org/doi/10.1021/acs.jpca.3c08027) for details of the construction of the dataset.
- .
+h3o2m_traindata.tar, h3o2m_validation_data.tar, and h3o2m_testdata.tar contains the training, validation, and test data, respectively. See J. Phys. Chem. A 128, 1600 (2024) [DOI: 10.1021/acs.jpca.3c08027](https://pubs.acs.org/doi/10.1021/acs.jpca.3c08027) for details of the construction of the dataset.
+
 
 Units are :
 
