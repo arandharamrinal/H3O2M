@@ -56,4 +56,18 @@ Output Format
 The output energies will be in units of Hartee, and the forces will be in Hartee/Bohr. Each line in the output file will follow this format:
 > Energy, F<sub>x</sub>, F<sub>y</sub>, F<sub>z</sub> of atom 1, F<sub>x</sub>, F<sub>y</sub>, F<sub>z</sub> of atom 2 ....
 
+Abinitio Data
+-------------
+A dataset containing xyz coordinate, energies, forces, and dipole moments of hydroxide hydrate. All data are obtained at the CCSD(T)/AVTZ level of theory using CFOUR2.1 software.
+
+h3o2m_traindata.tar, h3o2m_validation_data.tar, and h3o2m_testdata.tar contains the training, validation, and test data, respectively, as used in the paper [link](https://pubs.acs.org/doi/10.1021/acs.jpca.3c08027).
+
+Units are :
+
+Energy = Hartree (relative to the global minimum)
+
+Geometry = Bohr
+
+Forces = Hartree/Bohr
+
 Feel free to reach out if you have any questions or need further assistance.
